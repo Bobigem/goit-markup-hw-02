@@ -12,7 +12,7 @@ font-family: 'Roboto', sans-serif;*/
 :root{
     /*Шрифты*/
     --main-font: "Roboto", sans-serif;
-    --secondary-fond: "Raleway", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
 
     /*Цвет фона*/
     --header-color: #FFFFFF;
@@ -42,6 +42,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 color:var(--black-font);
+background-color: var(--header-color);
 
 }
 
@@ -112,8 +113,8 @@ color:var(--white-font);
 }
 
 
-button{
-font-family: var(--main-font);
+.cta-page-button{
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
@@ -231,4 +232,59 @@ text-decoration: none;
 .footer-item-map:hover,
 .footer-item-map:focus{
     color: var(--blue-font);
+}
+
+/*Portfolio Page*/
+
+/*Header*/
+
+.menu-item-link.active.current:active{
+    color: var(--blue-font);}
+
+/*Filter services*/
+
+.main{
+    background-color: var(--services-color);
+}
+
+.filter-list{
+list-style-type: none;
+}
+.filter-button{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color:var(--team-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--white-font);
+    background-color: var(--blue-font);
+    
+}
+.services-list-p2{
+    list-style-type: none;
+}
+.services-link-p2{
+    text-decoration: none;
+}
+.services-title-p2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--black-font);
+}
+.services-text-p2{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--grey-font);
 }
